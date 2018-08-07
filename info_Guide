@@ -1,0 +1,52 @@
+How to make a virtual environment:
+
+First: sudo apt-get install python3-pip
+Second:sudo pip3 install virtualenv 
+Third: virtualenv -p /usr/bin/python2.7 venv(use this ONLY of Python2)
+OR
+Fourth: virtualenv -p python3 venv OR python3 -m venv myenv
+Fifth: ENTER Using -- . venv/bin/activate 
+Sixth: EXIT using -- deactivate
+
+
+How to clon:
+
+1. Go to terminal 
+2. type: git clone then use HTTPS link next to clone
+3. enter and done 
+
+Git Push/Pull:
+
+1. git status  
+2. git add _____________ (name the files)
+3. git commit (add comment)
+4. git status 
+5. git push 
+
+How to creat a server when doing HTML:
+
+Tto run this go to terminal and type python -m http.server (just works with python 3) then open browser type localhost:(with the number the port is) For example: localhost:8000
+
+Terminal navigation:
+
+cd .. - go back once
+cd ~ - go back to home 
+pwd - know the path your on
+cd (file name) - when entering a directory 
+mkdir (name of file) -  make a directory
+rm -fr - remove a directory
+gvim (file name)- enter a file to change or write
+cat (file name) - view what is in file without opening 
+
+GVIM:
+:w - save 
+:q - exit 
+i - insert 
+esc - escape insert 
+L - Right
+H - Left
+K - Up
+J - Down
+:set number - put numbers 
+:colorscheme (name of desiree color) examples::desert or any other
+
