@@ -3,88 +3,138 @@
 <!--this is a comment-->
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Event Calendar</title>
 <style>
+div {background-color: #f1f1f1}
+* {box-sizing: border-box;}
+
+.header {
+  overflow: hidden;
+  background-color: #B6FC0B;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: left;
+  padding: 15px;
+  font-size: 15px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+}
+
+h1 {
+	text-align: center;
+	font-family: times new roman;
+}
+,header{
+	overflow: hidden;
+	background-color: #f1f1f1;
+	padding: 20px 10px;
+}
+
 table{
-	border:1px solid black;
+	border:1px solid #BEBEBE;
+	border-collapse: collapse;
 }
 td, th{
-	border: 1px solid blue;
-	font-family: times-roman;
+	border:1px solid #BEBEBE;
+	font-family: times new roman;
 	text-align: left;
-	padding: 5px; 
+	padding: 25px;
 }
 </style>
 </head>
 
-<title>PRACTICE</title>
-
 <body>
+<div class = "header" >
+	<a href = "#default" class = "logo" > Food</a>
+	<div class = "header-right">
+		<a class = "active" href = "#home" > Home</a>
+		<a href = "#contact" > Contact</a>
+		<a href = "#about" > About</a>
+	</div>
+</div>
 
-<h1>Practice Page</h1>
+<caption><h1>March 2019</h1></caption>
+<table style = "width: 100%">
 
-<p>Learning how to make a page.</p>
-<p>First page practice</p>
-
-<!--practice table-->
-<table style = "width: 75%">
-	<caption><h3>Table</h3></caption>
-
+	
 	<tr>
-		<th>Date</th>
-		<th>Name</th>
-		<th>Time</th>
-		
+	
+		<th rowspan = "-2">Sun</th>
+		<th>Mon</th>
+		<th>Tue</th>
+		<th>Wed</th>
+		<th>Thu</th>
+		<th>Fri</th>
+		<th>Sun</th>
 	</tr>
 	<tr>
-		<td>01/25/18</td>
-		<td>Natsu</td>
-		<td>2:25</td>
-		
+		<td style ="background-color: #D0D3D4;color:grey;"> Feb 24</td>
+		<td style ="background-color: #D0D3D4;color:grey;"> Feb 25</td>
+		<td style ="background-color: #D0D3D4;color:grey;"> Feb 26</td>
+		<td style ="background-color: #D0D3D4;color:grey;"> Feb 27</td>
+		<td style ="background-color: #D0D3D4;color:grey;"> Feb 28</td>
+		<td>Mar 01</td>
+		<td>Mar 02</td>
 	</tr>
 	<tr>
-		<td>02/29/18</td>
-		<td>Marcus</td>
-		<td>15:12</td>
-		
+		<td>Mar 03</td>
+		<td>Mar 04</td>
+		<td>Mar 05</td>
+		<td>Mar 06</td>
+		<td>Mar 07</td>
+		<td>Mar 08</td>
+		<td>Mar 09</td>
 	</tr>
 	<tr>
-		<td>03/20/18</td>
-		<td>Kou</td>
-		<td>17:53</td>
-		
+		<td>Mar 10</td>
+		<td>Mar 11</td>
+		<td>Mar 12</td>
+		<td>Mar 13</td>
+		<td>Mar 14</td>
+		<td>Mar 15</td>
+		<td>Mar 16</td>
 	</tr>
-
-<h3>Light Bulb</h3>
-
-<!--Light bulb turning on/off-->
-<script>
-function light (sw){
-	var pic; 
-	if (sw == 0){
-		pic = "https://www.w3schools.com/html/pic_bulboff.gif"
-	} else {
-		pic = "https://www.w3schools.com/html/pic_bulbon.gif"
-	}
-}
-</script>
-<img id = "myImage" src = "https://www.w3schools.com/html/pic_bulboff.gif" width = "100" height = "180">
-
-<p>
-<button type = "button" onclick = "light(1)" > Light On </button>
-<button type = "button" onclick = "light(0)" > Light Off </button>
-</p>
-
-<h3>Links examples</h3>
-
-<!--using "_blank" when click on the link it will open in a new browser-->
-<a href = "https://codehs.com/editor/videoplayer/61008/621825/128/53" target = "_blank" > Visior Codehs! </a>
-<p>Click the link....it will open codehs video</p>
-
-<h3>Image link</h3>
-
-<a href = "https://dropbox.com/s/xkbdira1077nt6g/TheMachineStops.pdf?dl=0">
-	<img src = "https://media1.tenor.com/images/019d4b615d97b7fe2cd2692465485d04/toner.gif?itemid=7387814" alt = "The Machine Stops Text" style = "width:42px;height:42px;border:0">
-</a>
+	<tr>
+		<td>Mar 17</td>
+		<td>Mar 18</td>
+		<td>Mar 19</td>
+		<td>Mar 20</td>
+		<td>Mar 21</td>
+		<td>Mar 22</td>
+		<td>Mar 23</td>
+	</tr>
+	<tr>
+		<td>Mar 24</td>
+		<td>Mar 25</td>
+		<td>Mar 26</td>
+		<td>Mar 27</td>
+		<td>Mar 28</td>
+		<td>Mar 29</td>
+		<td>Mar 30</td>
+	</tr>
+	<tr>
+		<td>Mar 31</td>
+		<td style ="background-color: #D0D3D4;color:grey;"> Apr 01</td>
+		<td style ="background-color: #D0D3D4;color:grey;"> Apr 02</td>
+		<td style ="background-color: #D0D3D4;color:grey;"> Apr 03</td>
+		<td style ="background-color: #D0D3D4;color:grey;"> Apr 04</td>
+		<td style ="background-color: #D0D3D4;color:grey;"> Apr 05</td>
+		<td style ="background-color: #D0D3D4;color:grey;"> Apr 06</td>
+	</tr>
 
 
 </body>
