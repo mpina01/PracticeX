@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!--to run this go to terminal and type python -m http.server (just works with python 3) then open browser type localhost:(with the number the port is) For example: localhost:8000 -->
+<!--to run this go to terminal and type python -m SimpleHTTPServer (just works with python 3) then open browser type localhost:(with the number the port is) For example: localhost:8000 -->
 <!--this is a comment-->
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Event Calendar</title>
 <style>
 div {background-color: #f1f1f1}
@@ -11,7 +11,7 @@ div {background-color: #f1f1f1}
 
 .header {
   overflow: hidden;
-  background-color: #B6FC0B;
+  background-color: lightgreen;
   padding: 20px 10px;
 }
 
@@ -38,11 +38,6 @@ h1 {
 	text-align: center;
 	font-family: times new roman;
 }
-,header{
-	overflow: hidden;
-	background-color: #f1f1f1;
-	padding: 20px 10px;
-}
 
 table{
 	border:1px solid #BEBEBE;
@@ -59,21 +54,24 @@ td, th{
 
 <body>
 <div class = "header" >
-	<a href = "#default" class = "logo" > Food</a>
+	<a class = "logo" > Food</a>
 	<div class = "header-right">
-		<a class = "active" href = "#home" > Home</a>
-		<a href = "#contact" > Contact</a>
-		<a href = "#about" > About</a>
+		<a class = "active" href = "#home" ><a href = "https://www.google.com" target = "_blank" > Home</a></a>
+		<a href = "#contact" ><a href = "https://www.w3schools.com/" target = "_blank" > Change</a></a>
+		<a href = "#about" ><a href = "https://javascript.info" target = "_blank" > Administration</a></a>
 	</div>
 </div>
 
-<caption><h1>March 2019</h1></caption>
+<h1>March 2019</h1>
+<caption><a href = "https://www.google.com" target = "_blank" > Previous</a></caption>
+<caption>April 2019</caption>
+<caption><a href = "https://youtube.com" target = "_blank"> Next</a></caption>
 <table style = "width: 100%">
 
 	
 	<tr>
 	
-		<th rowspan = "-2">Sun</th>
+		<th>Sun</th>
 		<th>Mon</th>
 		<th>Tue</th>
 		<th>Wed</th>
@@ -87,6 +85,7 @@ td, th{
 		<td style ="background-color: #D0D3D4;color:grey;"> Feb 26</td>
 		<td style ="background-color: #D0D3D4;color:grey;"> Feb 27</td>
 		<td style ="background-color: #D0D3D4;color:grey;"> Feb 28</td>
+
 		<td>Mar 01</td>
 		<td>Mar 02</td>
 	</tr>

@@ -13,6 +13,10 @@ td, th{
 	text-align: left;
 	padding: 5px; 
 }
+
+a:hover{
+	background-color: orange;
+}
 </style>
 </head>
 
@@ -102,14 +106,14 @@ function light (sw){
 <p> Press the face and read "The Machine Stops" </p>
 
 <h3>Var Element</h3>
+
 <p> Euler's identity: <var>mc</var><sup>2</sup> = <var>E</var> </p>
 
-<h3>Hover</h3>
+<h3<h3>Hover</h3>
 
-<a href = "https://www.google.com/" target = "_blank"> Google.com</a>
+<a href = "https://www.google.com/" target = "_blank" > Google.com</a>
 <br />
-<a href = "https://www.youtube.com/" target = "_blank">YouTube.com</a>
-
+<a href = "https://www.youtube.com/" target = "_blank" >YouTube.com</a>
 
 </body>
 </html>
