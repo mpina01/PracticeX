@@ -1,10 +1,10 @@
 red
 blue
 pink 
-yellow 
+yellow
 purple
 black 
 brown 
 orange
 white
-green 
+green

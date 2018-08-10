@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--to run this go to terminal and type python -m SimpleHTTPServer (just works with python 3) then open browser type localhost:(with the number the port is) For example: localhost:8000 -->
+<!--this is a comment-->
+<html>
+<head>
+<title> draft </title>
+<style>
+div {background-color: #f1f1f1}
+* {box-sizing: border-box;}
+.header {
+  overflow: hidden;
+  background-color: lightgreen;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: left;
+  padding: 15px;
+  font-size: 15px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+}
+
+a:link, a:visited, a:active, a:hover  {
+	text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropbtn {
+    font-size: 16px;    
+    border: none;
+    padding: 16px;
+    background-color: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: red;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</head>
+</style>
+<body>
+
+<div class = "header" >
+	<a class = "logo" > Events</a>
+	<div class = "header-right">
+	<div class = "dropdown">
+		<button class = "dropbtn"><a class = "active", "dropbtn" href = "#home" >Home</a></a></button>
+	 
+	<div class = "dropdown-content a">
+		<a href= "https://www.google.com" target = "_blank" > section I </a>
+		<a href= "https://www.youtube.com"  target = "_blank"> section II </a>
+		<a href= "https://www.www.w3schools.com"  target = "_blank"> section III </a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>

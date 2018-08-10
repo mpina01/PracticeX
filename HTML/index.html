@@ -10,28 +10,28 @@ div {background-color: #f1f1f1}
 * {box-sizing: border-box;}
 
 .header {
-  overflow: hidden;
-  background-color: lightgreen;
-  padding: 20px 10px;
+	overflow: hidden;
+	background-color: lightgreen;
+	padding: 20px 10px;
 }
 
 .header a {
-  float: left;
-  color: black;
-  text-align: left;
-  padding: 15px;
-  font-size: 15px; 
-  line-height: 25px;
-  border-radius: 4px;
+	float: left;
+	color: black;
+	text-align: left;
+	padding: 15px;
+	font-size: 15px; 
+	line-height: 25px;
+	border-radius: 4px;
 }
 
 .header a.logo {
-  font-size: 44px;
-  font-weight: bold;
+	font-size: 44px;
+	font-weight: bold;
 }
 
 .header-right {
-  float: right;
+	float: right;
 }
 
 h1 {
@@ -39,36 +39,104 @@ h1 {
 	font-family: times new roman;
 }
 
-table{
+table {
 	border:1px solid #BEBEBE;
 	border-collapse: collapse;
 }
-td, th{
+td {
+	
 	border:1px solid #BEBEBE;
 	font-family: times new roman;
+	color: grey;
 	text-align: left;
-	padding: 25px;
+	padding: 30px;
 }
+th {
+	border:1px solid #BEBEBE;
+	font-family: times new roman;
+	text-align: center;
+	padding: 10px;
+}
+
+a:link, a:visited, a:active, a:hover {
+	text-decoration: none;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropbtn {
+	font-size: 15px;
+	font-family: times new roman;    
+	border: 4px;
+	padding: 5px;
+	background-color: #f1f1f1;
+	color: red;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 100px;
+	box-shadow: 0px 12px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: none;
+	padding: 5px 5px;
+	text-decoration: none;
+	display: block;
+	text-align: left;    
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
 </style>
 </head>
-
 <body>
+
 <div class = "header" >
-	<a class = "logo" > Food</a>
+	<a class = "logo" > What is going on this month?</a>
 	<div class = "header-right">
-		<a class = "active" href = "#home" ><a href = "https://www.google.com" target = "_blank" > Home</a></a>
-		<a href = "#contact" ><a href = "https://www.w3schools.com/" target = "_blank" > Change</a></a>
-		<a href = "#about" ><a href = "https://javascript.info" target = "_blank" > Administration</a></a>
+	<div class = "dropdown">
+			<button class = "dropbtn"><a class = "active" href = "#home" > Home </a></a></button>
+	<div class = "dropdown-content a">
+		<a href= "https://www.google.com" target = "_blank"> Remove </a>
+		<a href= "https://www.youtube.com" target = "_blank"> Add Event </a>
+		<a href= "https://www.www.w3schools.com" target = "_blank" > Add Assignment </a>
+		</div>
+	</div>
+	<div class = "dropdown">
+			<button class = "dropbtn"><a class = "active" href = "#management" > Management </a></a></button>
+	<div class = "dropdown-content a">
+		<a href= "https://javascript.info" target = "_blank"> Settings </a>
+		<a href= "https://blog.miguelgrinberg.com" target = "_blank"> sign-up </a>
+		<a href= "https://app.grammarly.com" target = "_blank"> Log-in </a>
+		</div>
+	</div>
+	<div class = "dropdown">
+			<button class = "dropbtn"><a class = "active" href = "#Information" > Information </a></a></button>
+	<div class = "dropdown-content a">	
+		<a href= "https://www.google.com" target = "_blank"> Directions </a>
+		<a href= "https://www.youtube.com" target = "_blank"> Time </a>
+		<a href= "https://www.thesaurus.com" target = "_blank" > Address </a>
+			</div>
+		</div>
 	</div>
 </div>
 
 <h1>March 2019</h1>
-<caption><a href = "https://www.google.com" target = "_blank" > Previous</a></caption>
-<caption>April 2019</caption>
-<caption><a href = "https://youtube.com" target = "_blank"> Next</a></caption>
-<table style = "width: 100%">
 
-	
+<caption><a href = "https://www.google.com" target = "_blank" >Previous</a></caption>
+<caption>April 2019</caption>
+<caption><a href = "https://youtube.com" target = "_blank">Next</a></caption>
+<table style = "width: 100%">
 	<tr>
 	
 		<th>Sun</th>
@@ -80,12 +148,11 @@ td, th{
 		<th>Sun</th>
 	</tr>
 	<tr>
-		<td style ="background-color: #D0D3D4;color:grey;"> Feb 24</td>
-		<td style ="background-color: #D0D3D4;color:grey;"> Feb 25</td>
-		<td style ="background-color: #D0D3D4;color:grey;"> Feb 26</td>
-		<td style ="background-color: #D0D3D4;color:grey;"> Feb 27</td>
-		<td style ="background-color: #D0D3D4;color:grey;"> Feb 28</td>
-
+		<td style ="background-color: #D0D3D4;color:red;"> Feb 24</td>
+		<td style ="background-color: #D0D3D4;color:red;"> Feb 25</td>
+		<td style ="background-color: #D0D3D4;color:red;"> Feb 26</td>
+		<td style ="background-color: #D0D3D4;color:red;"> Feb 27</td>
+		<td style ="background-color: #D0D3D4;color:red;"> Feb 28</td>
 		<td>Mar 01</td>
 		<td>Mar 02</td>
 	</tr>
@@ -127,12 +194,12 @@ td, th{
 	</tr>
 	<tr>
 		<td>Mar 31</td>
-		<td style ="background-color: #D0D3D4;color:grey;"> Apr 01</td>
-		<td style ="background-color: #D0D3D4;color:grey;"> Apr 02</td>
-		<td style ="background-color: #D0D3D4;color:grey;"> Apr 03</td>
-		<td style ="background-color: #D0D3D4;color:grey;"> Apr 04</td>
-		<td style ="background-color: #D0D3D4;color:grey;"> Apr 05</td>
-		<td style ="background-color: #D0D3D4;color:grey;"> Apr 06</td>
+		<td style ="background-color: #D0D3D4;color:red;"> Apr 01</td>
+		<td style ="background-color: #D0D3D4;color:red;"> Apr 02</td>
+		<td style ="background-color: #D0D3D4;color:red;"> Apr 03</td>
+		<td style ="background-color: #D0D3D4;color:red;"> Apr 04</td>
+		<td style ="background-color: #D0D3D4;color:red;"> Apr 05</td>
+		<td style ="background-color: #D0D3D4;color:red;"> Apr 06</td>
 	</tr>
 
 

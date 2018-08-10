@@ -13,6 +13,42 @@ td, th{
 	text-align: left;
 	padding: 5px; 
 }
+
+a:hover{
+	background-color: yellow;
+}
+
+div a {
+	text-decoration: none;
+	color: red;
+	font-size: 15px;
+	padding:10px;
+	display: inline-block;
+}
+
+ul{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+ul li{ display: inline-block; }
+ul li:hover { background: white; }
+ul li:hover ul{ display: block; }
+ul li ul{
+	position: absolute;
+	width: 250px;
+	display: none;
+}
+
+ul li ul li{
+	background: lightgrey;
+	display: block;
+}
+
+ul li ul li a{ display: block !important; }
+ul li ul li:hover {background: yellow}
+
 </style>
 </head>
 
@@ -95,13 +131,14 @@ function light (sw){
 
 <h3>Image link</h3>
 
-<a href = "https://dropbox.com/s/xkbdira1077nt6g/TheMachineStops.pdf?dl=0">
+<a href = "https://dropbox.com/s/xkbdira1077nt6g/TheMachineStops.pdf?dl=0" target = "_blank">
 	<img src = "https://media1.tenor.com/images/019d4b615d97b7fe2cd2692465485d04/toner.gif?itemid=7387814" alt = "The Machine Stops Text" style = "width:42px;height:42px;border:0">
 </a>
 <!--insert border:o for the face not to have an outline box-->
 <p> Press the face and read "The Machine Stops" </p>
 
 <h3>Var Element</h3>
+
 <p> Euler's identity: <var>mc</var><sup>2</sup> = <var>E</var> </p>
 
 <h3>Hover</h3>
@@ -110,6 +147,24 @@ function light (sw){
 <br />
 <a href = "https://www.youtube.com/" target = "_blank">YouTube.com</a>
 
+<div> 
+  <ul>
+    <li>
+      <a href="#"> More Link </a>
+      <ul>
+        <li><a href="https://www.google.com" target = "_blank" > First </a></li>
+        <li><a href="https://www.youtube.com" target = "_blank" > Second </a></li>
+        <li><a href="https://www.thesaurus.com" target = "_blank"> Third </a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<p> Before the script... </p>
+<script>
+	alert('Hello, World');
+</script>
+<p> ...After the script </p>
 
 </body>
 </html>
